@@ -57,9 +57,9 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
 
-    self.navigationController.interactivePopGestureRecognizer.enabled = NO;
+//    self.navigationController.interactivePopGestureRecognizer.enabled = NO;
 
-    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithImage:[self menuButton]
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithImage:[self menuButton]
                                                                              style:UIBarButtonItemStyleDone
                                                                             target:self
                                                                             action:@selector(menuPressed)];
@@ -72,7 +72,7 @@
 
 - (void)viewDidDisappear:(BOOL)animated
 {
-    self.navigationController.interactivePopGestureRecognizer.enabled = YES;
+//    self.navigationController.interactivePopGestureRecognizer.enabled = YES;
 }
 
 @end
