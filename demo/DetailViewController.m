@@ -63,6 +63,8 @@
                                                                              style:UIBarButtonItemStyleDone
                                                                             target:self
                                                                             action:@selector(menuPressed)];
+    UISegmentedControl *titleSegment = [[UISegmentedControl alloc] initWithItems:@[@"公共视频", @"课堂视频"]];
+    self.navigationItem.titleView = titleSegment;
 }
 
 - (void)menuPressed
